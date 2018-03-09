@@ -7,7 +7,7 @@
 
 const path = require( 'path' );
 const WebpackNotifierPlugin = require( './webpacknotifierplugin' );
-const { getPostCssConfig } = require( '@ckeditor/ckeditor5-dev-utils' ).styles;
+const { styles } = require( '@ckeditor/ckeditor5-dev-utils' );
 
 /**
  * @param {Object} entryObject
@@ -52,7 +52,7 @@ module.exports = function getWebpackConfigForManualTests( entryObject, buildDir,
 						},
 						{
 							loader: 'postcss-loader',
-							options: getPostCssConfig( {
+							options: styles.getPostCssConfig( {
 								themeImporter: {
 									themePath,
 									debug: true
