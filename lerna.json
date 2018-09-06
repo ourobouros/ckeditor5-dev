@@ -1,5 +1,4 @@
 {
-  "lerna": "2.0.0-rc.1",
   "packages": [
     "packages/*",
     "."
@@ -7,7 +6,7 @@
   "hoist": true,
   "nohoist": "guppy-pre-commit",
   "version": "independent",
-  "commands": {
+  "command": {
     "bootstrap": {
       "concurrency": 1
     }
